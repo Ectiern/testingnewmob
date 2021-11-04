@@ -1,3 +1,4 @@
+/* Below is for navbar. */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 
  header {
     height: 70px;
-    background-color: #22292F;
+    background-color: rgb(89, 128, 89);
     padding: 10px 0;
  }
 
@@ -27,7 +28,7 @@
  }
  nav {
     position: absolute;
-    background-color: #3D4852;
+    background-color: darkseagreen;
     top:70px;
     left:0;
     width: 100%;
@@ -49,4 +50,74 @@
 
  nav ul li a:hover, nav ul li a:focus {
     color: #eb6f4a;
+ }
+
+/* Below is for recipes. */
+
+ .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+ }
+ .card {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 3px 2px 10px rgba(0,0,0,0.15);
+ }
+  
+ .card--title {
+    font-family: var(--ff-title);
+ }
+  
+ .card__title-box {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #555;
+ }
+  
+  
+ .card__image--wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+  
+ .card__food-type {
+    position: absolute;
+    bottom: 0; right: 0;
+    background-color: var(--accent-color);
+    padding: .25rem 3rem;
+    font-size: 2rem;
+    border-top-left-radius: .75rem;
+    color: white;
+ }
+  
+ .card__image {
+    height: 400px;
+    width: 150px;
+    flex: 1;
+ }
+  
+ .card__ingredients, .card__directions {
+    padding: 0 1.6rem;
+ }
+  
+ .card_ingredients--wrapper {
+    padding-left: 1.6rem;
+    
+    @supports (display: grid){
+        display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+ }
+ @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
  }
