@@ -46,6 +46,12 @@
     font-weight: 500;
     color: #482ff7;
 }
+.menu-container .navbar {
+    display: none;
+  }
+.menu-container:focus-within .navbar {
+    display: block;
+  }
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
