@@ -1,84 +1,52 @@
-.header{
-    border-bottom: 1px solid #E2E8F0;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
 
-.navbar {
+header {
+    height: 70px;
+    background-color: #22292F;
+    padding: 10px 0;
+ }
+
+.menu-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-}
-.hamburger {
-    display: none;
-}
+    padding: 0 15px;
+ }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.logo-img {
+    height: 50px;
+ }
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+ }
+nav {
+    position: absolute;
+    background-color: #3D4852;
+    top:70px;
+    left:0;
+    width: 100%;
+ }
+nav ul {
+    list-style-type: none;
+ }
+nav ul li {
+    padding: 0 15px;
+ }
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    /* Add your custom styles below to change appearance of links */
+    color: #DAE1E7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+ }
 
-.nav-item {
-    margin-left: 5rem;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-}
-
-.nav-link:hover{
-    color: #482ff7;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
-.menu-container .navbar {
-    display: none;
-  }
-.menu-container:focus-within .navbar {
-    display: block;
-  }
-
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-}
+nav ul li a:hover, nav ul li a:focus {
+    color: #eb6f4a;
+ }
