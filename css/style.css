@@ -7,10 +7,14 @@
  }
 
  header {
+    z-index: 1;
+    position: absolute;
     height: 70px;
+    width: 100%;
     background-color: rgb(89, 128, 89);
     padding: 10px 0;
  }
+
 
  .menu-wrap {
     display: flex;
@@ -52,6 +56,9 @@
     color: #eb6f4a;
  }
 
+.container{
+    padding-top: 70px;
+}
 /* Below is for recipes. */
  .row {
     display: flex;
